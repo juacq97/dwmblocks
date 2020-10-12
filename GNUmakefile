@@ -23,11 +23,10 @@ clean:
 	rm -f dwmblocks sigdwmblocks
 
 install: all
-	mkdir -p ${DESTDIR}${PREFIX}/bin
-	install -m 0755 dwmblocks ${DESTDIR}${PREFIX}/bin/dwmblocks
-	install -m 0755 sigdwmblocks ${DESTDIR}${PREFIX}/bin/sigdwmblocks
+	install -m 0755 dwmblocks ${DESTDIR}${PREFIX}/dwmblocks
+	install -m 0755 sigdwmblocks ${DESTDIR}${PREFIX}/sigdwmblocks
 
 uninstall:
-	rm -f ${DESTDIR}${PREFIX}/bin/dwmblocks ${DESTDIR}${PREFIX}/bin/sigdwmblocks
+	rm -f ${DESTDIR}${PREFIX}/bin/dwmblocks ${DESTDIR}${PREFIX}/sigdwmblocks
 
 .PHONY: all clean install uninstall
