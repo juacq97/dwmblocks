@@ -14,21 +14,14 @@
 static Block blocks[] = {
 /*	pathu				pathc					interval	signal */
 
-	{ PATH("spotify-bar"),		NULL,					5,		6},
-
-	{ PATH("fecha"),		NULL,					60,		3},
-
-	{ PATH("arch"),		        NULL,	                              3600,		1},
-
-	{ PATH("volume"),		NULL,		                         0,		4},
-
-	{ PATH("cpu-temp"),		NULL,		                        15,		7},
-
-	{ PATH("battery"),		NULL,		                        120,		2},
-
-	{ PATH("red"),		        NULL,		                        30,		5},
-
+//  { PATH("spotify-bar"),	NULL,					 5,		6},
+  { PATH("volume"),		PATH("volume_button"),	                 0,		4},	
+  { PATH("battery"),		NULL,		                       120,		2},
+  { PATH("fecha"),		PATH("date_button"),			60,		3},
+  { PATH("red"),	        PATH("red_button"),                     30,		5},
+//{ PATH("cpu-temp"),		NULL,		                        15,		7},
+//{ PATH("arch"),	        NULL,	                              3600,		1},
         { NULL } /* just to mark the end of the array */
 };
 
-static const char *delim =  "    ";
+static const char *delim =  " ";
