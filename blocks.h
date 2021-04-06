@@ -14,9 +14,11 @@
 static Block blocks[] = {
 /*	pathu				pathc					interval	signal */
 
-//  { PATH("spotify-bar"),	NULL,					 5,		6},
-  { PATH("volume"),		PATH("volume_button"),	                 0,		4},	
+//  { PATH("weather"),            NULL,                                    3600,          4},
+  { PATH("spotify-bar"),	NULL,					 5,		6},
   { PATH("battery"),		NULL,		                       120,		2},
+  { PATH("volume"),		PATH("volume_button"),	                 0,		4},	
+
   { PATH("fecha"),		PATH("date_button"),			60,		3},
   { PATH("red"),	        PATH("red_button"),                     30,		5},
 //{ PATH("cpu-temp"),		NULL,		                        15,		7},
